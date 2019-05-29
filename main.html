@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mine-sweeper.css">
+</head>
+
+<body onload="initGame()" background="img/back.jpg">
+
+    <div class="level-choose">
+        <input type="radio" name="mode" onclick="initGame()" value="4"> Beginner
+        <input type="radio" name="mode" onclick="initGame()" value="8" checked> Medium
+        <input type="radio" name="mode" onclick="initGame()" value="12"> Hard
+    </div>
+    <div class="menu">
+        <div class="show">
+            <p class="timer">0:0:0</p>
+            <p class="mines"></p>
+        </div>
+        <button onclick="initGame()"></button>
+        <p class="lives"></p>
+    </div>
+    <table class="center">
+        <tbody class="game-board"></tbody>
+    </table>
+
+    <div class="record">
+        <p>🏆 Beginner level record: <span class="Beginner"> </span> </p>
+        <p>🏆 Medium level record: <span class="Medium"> </span></p>
+        <p>🏆 Hard level record:<span class="Hard"> </span> </p>
+    </div>
+
+    <script src="js/mine-sweeper.js"></script>
+</body>
+
+</html>
